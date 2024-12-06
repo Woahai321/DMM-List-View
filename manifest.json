@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Debrid Media Manager List View",
+  "version": "1.0",
+  "description": "Adds a button to toggle list view on Debrid Media Manager movie/show pages.",
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://debridmediamanager.com/movie/*",
+        "*://debridmediamanager.com/show/*"
+      ],
+      "js": ["content.js"],
+      "css": ["style.css"]
+    }
+  ]
+}
